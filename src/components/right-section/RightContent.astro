@@ -1,0 +1,55 @@
+---
+import MainTitle from "./MainTitle.astro";
+import SubTitle from "./SubTitle.astro";
+import SimpleReview from "./SimpleReview.astro";
+import CTA from "./cta/CTA.astro";
+import CheckList from "./check-list/CheckList.astro";
+import FAQ from "./faq/FAQ.astro";
+import ValidateStrategyTogether from "./ValidateStrategyTogether.astro";
+import { withBase } from "../../utils/config-utils";
+import { Image } from "astro:assets";
+const leftDownArrowImageUrl = withBase("/images/left-down-arrow.svg");
+---
+
+<section class="right-section">
+  <Image
+    src={leftDownArrowImageUrl}
+    alt={"Video ICI"}
+    width={100}
+    height={100}
+    class={"left-down-arrow"}
+  />
+  <SimpleReview />
+  <MainTitle />
+  <SubTitle />
+  <FAQ />
+  <ValidateStrategyTogether />
+  <CTA />
+  <CheckList />
+</section>
+
+<style>
+  .left-down-arrow {
+    position: absolute;
+    left: -10rem;
+  }
+
+  .right-section {
+    width: 44.375rem;
+    margin: 4rem 0;
+    padding: 2rem 2rem 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #fcfcfc;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2) inset;
+  }
+
+  /*
+  @media (max-width: 1000px) {
+    .right-section {
+      margin: auto;
+      width: 90%;
+    }
+    */
+</style>
