@@ -1,15 +1,25 @@
-<h1>
-  CHAQUE&nbsp;&nbsp;ABONNE&nbsp;&nbsp;EST<br
-  />UN&nbsp;&nbsp;CLIENT&nbsp;&nbsp;POTENTIEL
-</h1>
+---
+import { Image } from "astro:assets";
+import { withBase } from "../../utils/config-utils";
+const checkboldImageUrl = withBase("/images/right-arrow.svg");
+---
+
+<div class="main-title">
+  <h1>J'AUTOPSIE&nbsp;&nbsp;TA<br /> LANDING&nbsp;&nbsp;PAGE</h1>
+  <Image src={checkboldImageUrl} alt="Checked" width={75} height={75} />
+</div>
 
 <style>
+  .main-title {
+    display: flex;
+    align-items: center;
+  }
+
   h1 {
     color: black;
     font-size: 4rem;
     font-weight: 700;
     line-height: 4.6875rem;
     letter-spacing: -0.4rem;
-    white-space: nowrap;
   }
 </style>
