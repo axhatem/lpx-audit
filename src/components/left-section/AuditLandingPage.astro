@@ -1,0 +1,172 @@
+---
+import { Image } from "astro:assets";
+import { withBase } from "../../utils/config-utils.ts";
+const rightArrowSquareImageUrl = withBase("/images/right-arrow-square.svg");
+---
+
+<div class="audit-landing-page">
+  <div class="paiment-container">
+    <p class="paiment">Paiement total</p>
+    <h2>Audit de landing page</h2>
+  </div>
+
+  <p class="check-list-item">Ce que tu peux espérer :</p>
+  <ul>
+    <li>
+      <Image
+        src={rightArrowSquareImageUrl}
+        alt="Warning!"
+        class="right-arrow-icon"
+        width={12}
+        height={12}
+      />
+      <span>awfawfawf</span>
+    </li>
+    <li>
+      <Image
+        src={rightArrowSquareImageUrl}
+        alt="Warning!"
+        class="right-arrow-icon"
+        width={12}
+        height={12}
+      />
+      <span>awfawfawf</span>
+    </li>
+    <li>
+      <Image
+        src={rightArrowSquareImageUrl}
+        alt="Warning!"
+        class="right-arrow-icon"
+        width={12}
+        height={12}
+      />
+      <span>awfawfawf</span>
+    </li>
+    <li>
+      <Image
+        src={rightArrowSquareImageUrl}
+        alt="Warning!"
+        class="right-arrow-icon"
+        width={12}
+        height={12}
+      />
+      <span>awfawfawf</span>
+    </li>
+  </ul>
+
+  <p class="check-list-item">Ce que tu vas obtenir :</p>
+  <ul>
+    <li>
+      <Image
+        src={rightArrowSquareImageUrl}
+        alt="Warning!"
+        class="right-arrow-icon"
+        width={12}
+        height={12}
+      />
+      <span>awfawfawf</span>
+    </li>
+    <li>
+      <Image
+        src={rightArrowSquareImageUrl}
+        alt="Warning!"
+        class="right-arrow-icon"
+        width={12}
+        height={12}
+      />
+      <span>awfawfawf</span>
+    </li>
+    <li>
+      <Image
+        src={rightArrowSquareImageUrl}
+        alt="Warning!"
+        class="right-arrow-icon"
+        width={12}
+        height={12}
+      />
+      <span>awfawfawf</span>
+    </li>
+    <li>
+      <Image
+        src={rightArrowSquareImageUrl}
+        alt="Warning!"
+        class="right-arrow-icon"
+        width={12}
+        height={12}
+      />
+      <span>awfawfawf</span>
+    </li>
+  </ul>
+
+  <p class="check-list-item">Ce que dois faire maintenant :</p>
+  <ul>
+    <li>
+      <Image
+        src={rightArrowSquareImageUrl}
+        alt="Warning!"
+        class="right-arrow-icon"
+        width={12}
+        height={12}
+      />
+      <span>awfawfawf</span>
+    </li>
+    <li>
+      <Image
+        src={rightArrowSquareImageUrl}
+        alt="Warning!"
+        class="right-arrow-icon"
+        width={12}
+        height={12}
+      />
+      <span>awfawfawf</span>
+    </li>
+  </ul>
+</div>
+
+<style>
+  .paiment-container {
+    margin-bottom: 1rem;
+  }
+
+  .audit-landing-page {
+    width: 27.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding-top: 1.75rem;
+    padding-left: 1.75rem;
+  }
+
+  .paiment {
+    color: #777;
+  }
+
+  .check-list-item {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 0.5rem;
+  }
+
+  li {
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  li span {
+    padding-bottom: 0.1rem;
+  }
+</style>

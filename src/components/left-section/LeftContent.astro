@@ -1,11 +1,15 @@
 ---
-import MainTitle from "../right-section/MainTitle.astro";
-import SubTitle from "../right-section/SubTitle.astro";
+import AuditLandingPage from "./AuditLandingPage.astro";
+import CTA from "./CTA.astro";
+import MainTitle from "./MainTitle.astro";
+import SubTitle from "./SubTitle.astro";
 ---
 
 <section class="left-content">
   <MainTitle />
   <SubTitle />
+  <AuditLandingPage />
+  <CTA />
 </section>
 
 <style>
@@ -13,7 +17,9 @@ import SubTitle from "../right-section/SubTitle.astro";
     margin-top: 10rem;
     margin-left: 10rem;
     width: 30rem;
-    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 
   /*
