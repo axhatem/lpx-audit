@@ -1,0 +1,51 @@
+---
+import FiveRating from "../common/FiveRating.astro";
+import { Image } from "astro:assets";
+import { withBase } from "../../utils/config-utils.ts";
+const circleImageUrl = withBase("/images/circle.svg");
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<div class="review-card">
+  <FiveRating />
+  <p>
+    {description}
+  </p>
+  <div class="avatar">
+    <Image src={circleImageUrl} alt={"Avatar"} width={50} height={50} />
+    <span>{title}</span>
+  </div>
+</div>
+
+<style>
+  .review-card {
+    padding: 1rem;
+    width: 17.18rem;
+    border-radius: 5px;
+    background: linear-gradient(0deg, #fff 0%, #fff 100%), #f0f0f0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .avatar {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: #000;
+  }
+
+  span {
+    font-size: 0.75rem;
+  }
+</style>

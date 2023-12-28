@@ -1,10 +1,34 @@
+---
+import ReviewCard from "./ReviewCard.astro";
+---
+
 <section class="right-section">
   <div class="video"></div>
   <div class="grid-container">
-    <div class="grid-item"><div class="card"></div></div>
-    <div class="grid-item"><div class="card"></div></div>
-    <div class="grid-item"><div class="card"></div></div>
-    <div class="grid-item"><div class="card"></div></div>
+    <div class="grid-item">
+      <ReviewCard
+        title="John Doe"
+        description="Working with this team has been a game-changer for our business. Their attention to detail and innovative approach has significantly boosted our productivity and market presence. Highly recommend their services for any forward-thinking company!"
+      />
+    </div>
+    <div class="grid-item">
+      <ReviewCard
+        title="Jane Smith"
+        description="I was truly amazed by the level of creativity and dedication shown in bringing my project to life. The end result was not just satisfactory, but it exceeded all my expectations. A heartfelt thank you to the entire team for their exceptional work."
+      />
+    </div>
+    <div class="grid-item">
+      <ReviewCard
+        title="Michael Johnson"
+        description="As an educator, I have seen many services come and go, but this one stands out. It has immensely helped in engaging students and enhancing their learning experience. A top-notch resource that I would gladly recommend to my colleagues."
+      />
+    </div>
+    <div class="grid-item">
+      <ReviewCard
+        title="Emily Clark"
+        description="In our efforts to promote sustainability, we found a partner who not only understands our vision but also adds immense value to it. Their commitment to eco-friendly practices and innovative solutions has been instrumental in our campaign's success."
+      />
+    </div>
   </div>
 </section>
 
@@ -21,14 +45,6 @@
     margin-bottom: 8rem;
     display: flex;
     flex-direction: column;
-  }
-
-  .card {
-    width: 17.18rem;
-    height: 12.5rem;
-    border-radius: 5px;
-    background: linear-gradient(0deg, #fff 0%, #fff 100%), #f0f0f0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
   .grid-container {
