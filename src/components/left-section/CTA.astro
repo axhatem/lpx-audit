@@ -35,8 +35,8 @@
   }
 
   .button {
-    width: 44rem;
-    height: 10rem;
+    width: 35rem;
+    height: 8rem;
     text-decoration: none;
     color: #fff;
     display: flex;
@@ -54,18 +54,19 @@
   .main {
     text-decoration: underline;
     font-weight: 700;
+    line-height: 0;
   }
 
   .glow-effect {
     --glow-line-color: #9b0c3e;
-    --glow-line-thickness: 2px;
-    --glow-line-length: 20px;
+    --glow-line-thickness: 0.2rem;
+    --glow-line-length: 2rem;
     --glow-blur-color: #9b0c3e;
-    --glow-blur-size: 5px;
-    --glow-offset: 0px;
-    --animation-speed: 1200ms;
+    --glow-blur-size: 0.5rem;
+    --glow-offset: 0;
+    --animation-speed: 1300ms;
     /* do not change, used for calculations */
-    --container-offset: 100px;
+    --container-offset: 10rem;
     position: relative;
   }
 
@@ -85,12 +86,11 @@
     height: calc(100% - var(--container-offset) + var(--glow-offset));
     x: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
     y: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
-    rx: 1.25rem;
     fill: transparent;
     stroke: black;
-    stroke-width: 5px;
+    stroke-width: 0.5rem;
     stroke-dasharray: var(--glow-line-length)
-      calc(50px - var(--glow-line-length));
+      calc(5rem - var(--glow-line-length));
   }
 
   .glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
@@ -125,10 +125,10 @@
   }
 
   .glow-effect[data-glow-animation="false"] {
-    --glow-line-length: 50px;
+    --glow-line-length: 5rem;
   }
   .glow-effect[data-glow-offset="true"] {
-    --glow-offset: 10px;
+    --glow-offset: 1rem;
   }
 
   .glow-effect[data-glow-animation="grow"]:is(:hover, :focus) .glow-container {
